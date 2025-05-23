@@ -1,0 +1,222 @@
+body {
+    background-image: url('https://static.euronews.com/articles/stories/08/31/77/26/1200x675_cmsv2_3f03b839-988b-581e-a9cb-a5b57abe4909-8317726.jpg'); 
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    margin:40px;
+    padding:auto;
+  }
+  body::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    height:3000px;
+      background-color: rgba(0, 0, 0, 0.5); 
+      z-index: -1; /* Keeps it behind any content */
+  }
+  
+  .container {
+    display:flow-root; /* Flexbox layout */
+    justify-content: space-between; /* Space between logo and nav links */
+    align-items: center; /* Center items vertically */
+  }
+  
+  .title-box {
+    background-color: #A52A2A; 
+    color: white;
+    text-align: center;
+    padding: 2px;
+  }
+  
+  .nav-box {
+    background-color: #FFE4C4; /* Light gray background */
+    padding: 10px 20px;
+  }
+  
+  .nav-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .nav-box li {
+    margin: 0;
+  }
+  
+  .nav-box a {
+    text-decoration: none;
+    color: #A52A2A;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 50px; /* Space between the icon and text */
+  }
+  
+  .nav-box a i {
+    font-size: 16px; /* Adjust icon size */ 
+  }
+  h1 {
+    font-size:40px;
+    text-align:left;
+    font-family:Fantasy;
+    font-weight:normal;
+  }
+  h2,h4 {
+    text-align:left;
+    background-color:#FFE4C4;
+  }
+  .edit {
+    color:white;
+    font-size:25px;
+    text-align:left;
+    background-color:#A52A2A;
+    padding:10px;
+    margin:50px 100px;
+    display:flex;
+  }
+  p {
+    text-align:left;
+    font-family:serif;
+    color:white;
+    font-size:18px;
+  }
+  a {
+    text-decoration:none; 
+    color:#FFE4C4;
+  }
+  h3 {
+    text-align:center;
+    background-color:#FFE4C4;
+    font-size:35px;
+    color:#A52A2A;
+  }
+  
+  h5 {
+    text-align:center;
+    font-family:serif;
+    color:white;
+    font-size:20px;
+    background-color:#A52A2A;
+  }
+  .content {
+    background-color:#FFE4C4;
+    opacity:10;
+    width:80%;
+    height:auto;
+    border: 23px solid #A52A2A;
+    padding: auto;
+    margin: 40px auto;
+    box-sizing: border-box;
+  }
+  
+  form {
+    width: auto;
+    max-width: 400px;
+    min-width: 300px;
+    margin: 1px auto;
+    padding-bottom: 2em;
+  }
+  fieldset {
+    border: none;
+    padding:0rem 0;
+    border-bottom: none;
+  }
+  
+  label {
+    display: block;
+    margin: 0.5rem 0;
+  }
+  
+  input,
+  textarea,
+  select {
+    margin: 2px 0 0 0;
+    width: 100%;
+    min-height: 2em;
+  }
+  
+  input, textarea {
+    background-color: #F0FFFF;
+    border: 1px solid #0a0a23;
+    color: black;
+  }
+  legend,label {
+    color:white;
+    padding:3px;
+  }
+  
+  input[type="submit"] {
+    display: block;
+    width: 40%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: #FFE4C4;
+    border-color: white;
+    min-width: 50px;
+  }
+  .hero {
+      padding: 0.5rem;
+      color: black;
+      text-align: center;
+  }
+  
+  .donate-button {
+      display: inline-block;
+      margin-top: 0rem;
+      padding: 0.8rem 1.5rem;
+      font-size: 1.2rem;
+      color: white;
+      background-color: #FF6F61;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+    
+  }
+  
+  .donate-button:hover {
+      background-color: #E64A45;
+    
+  }
+  .about-section {
+      display: flex;
+      flex-direction: column; /* Stack elements vertically */
+      justify-content: center; /* Center vertically */
+      align-items: center; /* Center horizontally */
+      text-align: center; /* Center text alignment */
+      height: 20vh; /* Full viewport height */
+      background-color: #A52A2A; /* Light background */
+      padding: 0.5rem; /* Padding for spacing */
+  }
+  
+  /* About Label */
+  .about-label {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #A52A2A; /* Accent color for the label */
+      margin-bottom: 0rem; /* Space between label and text */
+      text-transform: uppercase; /* Optional: Makes text all uppercase */
+      letter-spacing: 1px; /* Optional: Adds space between letters */
+  }
+  
+  /* About Text */
+  .about-text {
+      font-size: 1.2rem;
+      color: white; /* Neutral color for text */
+      line-height: 1.6; /* Improved readability */
+  }
+  
+  img {
+    width:70%;
+    height:50%;
+    border-radius:10%;
+    display: block;
+    margin-left: 90px;
+    margin-right: 30px;
+  }
